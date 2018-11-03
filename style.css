@@ -1,0 +1,82 @@
+body {
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+100;Blue+to+Transparent */
+     background: -moz-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 1) 0%, rgba(125, 185, 232, 0) 100%);
+     /* FF3.6-15 */
+     background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 1) 0%, rgba(125, 185, 232, 0) 100%);
+     /* Chrome10-25,Safari5.1-6 */
+     background: radial-gradient(ellipse at center, rgba(30, 87, 153, 1) 0%, rgba(125, 185, 232, 0) 100%);
+     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8', GradientType=1);
+     /* IE6-9 fallback on horizontal gradient */
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    color: darkblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav a {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 2.5em;
+    display: block;
+    text-align: center;
+    
+}
+
+.naslovi_galerija {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery>div>a>img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.gallery {
+    display: inline-block;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.gallery1 {
+    margin: 0;
+    display: inline-block;
+}
+
+@media (min-width: 800px) {
+    header nav a:hover {
+        color: orange;
+    }
+    header nav a:active {
+        color: red;
+    }
+    nav {
+        display: flex;
+        justify-content: space-evenly
+    }
+    .gallery img {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .gallery img:hover {
+        opacity: 1;
+    }
+   //* nav a {
+        border: 2px solid darkblue;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
