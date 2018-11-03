@@ -9,7 +9,6 @@ body {
      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8', GradientType=1);
      /* IE6-9 fallback on horizontal gradient */
     margin: 0;
-    font-family: "Times New Roman", Times, serif;
     color: darkblue;
     font-family: 'Montserrat', sans-serif;
 }
