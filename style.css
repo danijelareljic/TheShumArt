@@ -15,6 +15,18 @@ body {
 header {
     overflow: hidden;
 }
+footer {
+    display: block;
+    width: 100%;
+    background-color: #e3e8eb;
+    margin: 0 0 0 0;
+    color: darkblue;
+    text-align: center;
+    height: auto;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
 nav {
     margin-bottom: 20px;
 }
@@ -101,8 +113,7 @@ p {
 h1.line {
     margin: 0 0 16px 0;
     font-size: 1.1em;
-    font-weight: 400;
-    color: #282827;
+    color: darkblue;
     position: relative;
     text-align: center;
 }
@@ -111,7 +122,9 @@ h1.line span {
     position: relative;
     z-index: 2;
     padding: 10px;
-    background: darkblue;
+    padding-top: 2px;
+    background: #e3e8eb;
+    color: darkblue;
 
 }
 h1.line::after {
@@ -151,6 +164,7 @@ h1.line::after {
     }
     .footer {
         clear: both;
+        align-content: center;
     }
      .gallery img {
         cursor: pointer;
