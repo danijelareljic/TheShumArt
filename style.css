@@ -1,31 +1,40 @@
+html {
+    background: url("static/pozadina1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
-     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+100;Blue+to+Transparent */
-     background: -moz-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 1) 0%, rgba(125, 185, 232, 0) 100%);
-     /* FF3.6-15 */
-     background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 1) 0%, rgba(125, 185, 232, 0) 100%);
-     /* Chrome10-25,Safari5.1-6 */
-     background: radial-gradient(ellipse at center, rgba(30, 87, 153, 1) 0%, rgba(125, 185, 232, 0) 100%);
-     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8', GradientType=1);
-     /* IE6-9 fallback on horizontal gradient */
     margin: 0;
     color: darkblue;
     font-family: 'Montserrat', sans-serif;
 }
 
-header nav a {
+header {
+    overflow: hidden;
+    background-image: url("static/pozadina2.jpg");
+    background-size: cover;
+}
+nav {
+    margin-bottom: 20px;
+}
+nav a {
     color: darkblue;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid;
+    background-color: bisque;
+    opacity: 0.6;
     display: block;
     text-align: center;
-    
 }
 
-.naslovi_galerija {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
+p {
+    text-shadow: -1px -1px 0 #e3e8eb, 1px -1px 0 #e3e8eb, -1px 1px 0 #e3e8eb, 1px 1px 0 #e3e8eb;
 }
 
 .logo {
@@ -34,48 +43,59 @@ header nav a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
 }
 
-.gallery>div>a>img {
-    width: 350px;
-    height: 300px;
-    object-fit: cover;
-}
-
-.gallery {
-    display: inline-block;
+.posao {
     text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top: 0;
 }
 
-.gallery1 {
-    margin: 0;
-    display: inline-block;
+.border-button {
+    /* Full width border and a clip-path visually cutting it down to the starting size */
+    border: solid 10px #f15e1a;
+    clip-path: polygon( calc(0% + 5px) calc(0% + 5px), /* top left */
+    calc(100% - 5px) calc(0% + 5px), /* top right */
+    calc(100% - 5px) calc(100% - 5px), /* bottom right */
+    calc(0% + 5px) calc(100% - 5px)/* bottom left */
+    );
+    transition: clip-path 0.6s linear;
+    border-radius: 25px;
 }
+
+.border-button:hover {
+    /* Clip-path spanning the entire box so it's no longer hiding the full-width border. */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.wrapper {
+    display: block;
+    margin: 10px;
+    font-size: 25px;
+    padding: 3%;
+}
+
 
 @media (min-width: 800px) {
-    header nav a:hover {
-        color: orange;
-    }
-    header nav a:active {
-        color: red;
-    }
     nav {
+        float: right;
         display: flex;
-        justify-content: space-evenly
+        clear: both;
     }
-    .gallery img {
-        opacity: 0.8;
-        cursor: pointer;
+    .logo {
+        float: left;
     }
-    .gallery img:hover {
-        opacity: 1;
-    }
-   //* nav a {
-        border: 2px solid darkblue;
-        border-radius: 10px;
+    .posao {
+        clear: both;
+        float: left;
+        margin-left: 50px;
         padding-left: 10px;
-        padding-right: 10px;
+    }
+    .wrapper {
+        display: flex;
+        width: 50% 50%;
+    }
+    .main, .sidebar {
+        padding: 20px;
     }
 }
