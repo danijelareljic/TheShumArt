@@ -117,4 +117,16 @@ p {
     .main, .sidebar {
         padding: 20px;
     }
+     .gallery img {
+        cursor: pointer;
+    }
+    .gallery img:hover {
+        opacity: 0.8;
+    }
+    .gallery {
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
