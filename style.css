@@ -152,6 +152,7 @@ h1.line::after {
     }
     .footer {
         clear: both;
+        align-content: center;
     }
      .gallery img {
         cursor: pointer;
