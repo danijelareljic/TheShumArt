@@ -136,12 +136,17 @@ h1.line::after {
         margin-left: 50px;
         padding-left: 10px;
     }
-    .wrapper {
-        display: flex;
-        width: 50% 50%;
+     .wrapper {
+        overflow: hidden;
+        padding: 10px;
     }
     .main, .sidebar {
-        padding: 20px;
+        float: left;
+        width: 40%;
+        margin-left: 10%;
+    }
+    .footer {
+        clear: both;
     }
      .gallery img {
         cursor: pointer;
