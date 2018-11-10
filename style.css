@@ -79,6 +79,21 @@ p {
     font-size: 25px;
     padding: 3%;
 }
+.gallery div img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px 20px 0 20px;
+    border-radius: 20px;
+}
+
+.gallery {
+    display: block;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0 0 5px #343436;
+}
 
 @media (min-width: 800px) {
     nav {
