@@ -56,6 +56,11 @@ p {
     background-size: cover;
 }
 
+.header-gallery {
+    background-image: url("static/gallery_background.jpg");
+    background-size: cover;
+}
+
 .border-button {
     /* Full width border and a clip-path visually cutting it down to the starting size */
     border: solid 10px #f15e1a;
