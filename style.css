@@ -87,6 +87,8 @@ p {
 .border-button:hover {
     /* Clip-path spanning the entire box so it's no longer hiding the full-width border. */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border: solid 10px bisque;
+    background-color: #f15e1a;
 }
 
 .wrapper {
