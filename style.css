@@ -14,12 +14,12 @@ body {
 
 header {
     overflow: hidden;
-    background-image: url("static/pozadina2.jpg");
-    background-size: cover;
 }
+
 nav {
     margin-bottom: 20px;
 }
+
 nav a {
     color: darkblue;
     text-decoration: none;
@@ -51,6 +51,11 @@ p {
     margin-top: 0;
 }
 
+.header {
+    background-image: url("static/pozadina2.jpg");
+    background-size: cover;
+}
+
 .border-button {
     /* Full width border and a clip-path visually cutting it down to the starting size */
     border: solid 10px #f15e1a;
@@ -74,7 +79,6 @@ p {
     font-size: 25px;
     padding: 3%;
 }
-
 
 @media (min-width: 800px) {
     nav {
