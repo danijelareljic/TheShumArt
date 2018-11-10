@@ -15,19 +15,6 @@ body {
 header {
     overflow: hidden;
 }
-footer {
-    display: block;
-    width: 100%;
-    background-color: #e3e8eb;
-    margin: 0 0 0 0;
-    color: darkblue;
-    text-align: center;
-    height: auto;
-    line-height: 20px;
-    padding-top: 10px;
-    padding-bottom: -30px;
-}
-
 nav {
     margin-bottom: 20px;
 }
@@ -164,7 +151,6 @@ h1.line::after {
     }
     .footer {
         clear: both;
-        align-content: center;
     }
      .gallery img {
         cursor: pointer;
