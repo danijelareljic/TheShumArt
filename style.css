@@ -6,14 +6,110 @@ html {
     background-size: cover;
 }
 
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+   margin-top: 5%;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+      display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 150px;
+    width: 200px;
+    margin: 0 2px;
+    background-color: #bbb;
+    /* border-radius: 50%; */
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation*/
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  } 
+  
+
 body {
     margin: 0;
+    
     color: darkblue;
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
     overflow: hidden;
+}
+.naslov {
+    max-width: 100vw;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px dotted #f15e1a;
+    text-align: center;
+    margin-top: 3%;
 }
 footer {
     display: block;
@@ -96,7 +192,9 @@ p {
     margin: 10px;
     font-size: 25px;
     padding: 3%;
+    
 }
+
 .gallery div img {
     width: 350px;
     height: 300px;
@@ -156,18 +254,24 @@ h1.line::after {
         padding-left: 10px;
     }
      .wrapper {
-        overflow: hidden;
+        display: flex;
         padding: 10px;
+        flex-basis: 100%;
+        
     }
-    .main, .sidebar {
-        float: left;
-        width: 40%;
-        margin-left: 10%;
+    .main {
+        flex: 3;
     }
-    .footer {
-        clear: both;
-        align-content: center;
+    .sidebar {
+        flex: 1;
     }
+    .naslov {
+        font-size: 30px;
+    }
+    /* .footer {
+        
+        display: inline-block;
+    } */
      .gallery img {
         cursor: pointer;
     }
