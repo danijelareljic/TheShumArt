@@ -253,25 +253,23 @@ h1.line::after {
         margin-left: 50px;
         padding-left: 10px;
     }
-     .wrapper {
-        display: flex;
+    .wrapper {
+        overflow: hidden;
         padding: 10px;
-        flex-basis: 100%;
-        
     }
-    .main {
-        flex: 3;
+    .main, .sidebar {
+        float: left;
+        width: 40%;
+        margin-left: 10%;
     }
-    .sidebar {
-        flex: 1;
+    .footer {
+        clear: both;
     }
+    
     .naslov {
         font-size: 30px;
     }
-    /* .footer {
-        
-        display: inline-block;
-    } */
+   
      .gallery img {
         cursor: pointer;
     }
