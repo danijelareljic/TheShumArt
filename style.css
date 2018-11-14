@@ -176,12 +176,12 @@ p {
     background-size: cover;
 }
 
-.kontakt {
+.kontakt, .naslov-kontakt {
     padding-left: 10px;
-    margin-bottom: 0;
 }
-.naslov-kontakt {
-    padding-left: 10px;
+
+.kontakt p {
+    margin-bottom: 0;
 }
 
 .border-button {
