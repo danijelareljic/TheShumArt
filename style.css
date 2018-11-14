@@ -183,6 +183,9 @@ p {
 .kontakt p {
     margin-bottom: 0;
 }
+.tekst-kontakt {
+        max-width: 350px;
+    }
 
 .border-button {
     /* Full width border and a clip-path visually cutting it down to the starting size */
@@ -297,5 +300,8 @@ h1.line::after {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .tekst-kontakt {
+        max-width: 500px;
     }
 }
