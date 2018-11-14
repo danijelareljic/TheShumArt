@@ -229,7 +229,7 @@ p {
 }
 
 h1.line {
-    margin: 0 0 16px 0;
+    margin: 0;
     font-size: 1.1em;
     color: darkblue;
     position: relative;
