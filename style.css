@@ -225,10 +225,8 @@ p {
 
 .gallery {
     display: block;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
 }
+
 h1.line {
     margin: 0 0 16px 0;
     font-size: 1.1em;
