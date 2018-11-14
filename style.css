@@ -171,6 +171,14 @@ p {
     background-image: url("static/gallery_background.jpg");
     background-size: cover;
 }
+.header-kontakt {
+    background-image: url(static/kontakt_background.jpg);
+    background-size: cover;
+}
+
+.kontakt, .naslov-kontakt {
+    padding-left: 10px;
+}
 
 .border-button {
     /* Full width border and a clip-path visually cutting it down to the starting size */
