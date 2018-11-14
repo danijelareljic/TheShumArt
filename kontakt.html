@@ -29,12 +29,10 @@
     </header>
  
   
-    / Kontakt
+   <p class="naslov-kontakt">Pošaljite nam poruku</p>
+    <hr>
 
-    <p>Pošaljite nam poruku</p>
-    <hr aria-setsize="400px">
-
-
+    <div class="kontakt">
     <form>
 
         <!-- <section  class="inputDiv" >
@@ -50,26 +48,34 @@
         </section> -->
 
 
-        Ime i Prezime: <br />
-        <input type="text" name="ime i prezime" required minlength="2" placeholder="Upišite ime i prezime" required
-            size="50"><br><br />
+        <p>Ime i Prezime:</p>
+        <!-- <input type="text" name="ime i prezime" required minlength="2" placeholder="Upišite ime i prezime" required
+            size="50"> -->
+        <textarea name="ime i prezime" cols="50" rows="2" required minlength="2" placeholder="Upišite ime i prezime"></textarea>
+        
 
 
-        Naslov poruke: <br>
-        <input type="text" name="naslov poruke" required minlength="2" maxlength="50" required size="50" placeholder="Upišite naslov poruke"><br><br />
-
-        Email: <br>
-        <input type="email" name="email" required size="50" placeholder="Upišite email"><br><br>
-
-        Vaša poruka: <br>
-        <input type="text" name="poruka" required size="50"><br><br>
+        <p>Naslov poruke: </p>
+        <!-- <input type="text" name="naslov poruke" required minlength="2" maxlength="50" required size="50" placeholder="Upišite naslov poruke"><br><br /> -->
+        <textarea name="naslov poruke" cols="50" rows="2" required minlength="2" placeholder="Upišite naslov poruke"></textarea>
+      
 
 
+        <p>Email:</p>
+        <!-- <input type="email" name="email" required size="50" placeholder="Upišite email"><br><br> -->
+        <textarea name="naslov poruke" cols="50" rows="2" required minlength="2" placeholder="Upišite Vaš email"></textarea>
+      
 
 
-        <input type="submit" value="Posalji">
+        <p>Vaša poruka:</p>
+        <!-- <input type="text" name="poruka" required size="50" height="200px"><br><br> -->
+        <textarea name="poruka" cols="50" rows="15" placeholder="Tekst poruke"></textarea> <br><br>
+
+        <input type="submit" value="Pošalji">
 
     </form>
+</div>
+
         <footer class="footer">
         <h1 class="line">
         <span>Share</span>
