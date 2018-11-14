@@ -176,7 +176,11 @@ p {
     background-size: cover;
 }
 
-.kontakt, .naslov-kontakt {
+.kontakt {
+    padding-left: 10px;
+    padding-bottom: 0;
+}
+.naslov-kontakt {
     padding-left: 10px;
 }
 
