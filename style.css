@@ -172,7 +172,7 @@ p {
     background-size: cover;
 }
 .header-kontakt {
-    background-image: url(static/kontakt_background.jpg);
+    background-image: url("static/kontakt_background.jpg");
     background-size: cover;
 }
 
