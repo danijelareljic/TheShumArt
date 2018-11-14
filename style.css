@@ -209,10 +209,8 @@ p {
 
 .wrapper {
     display: block;
-    margin: 10px;
-    font-size: 25px;
-    padding: 3%;
-    
+    font-size: 1.5em;
+    text-align: justify;
 }
 
 .gallery div img {
@@ -273,7 +271,7 @@ h1.line::after {
     }
     .wrapper {
         overflow: hidden;
-        padding: 10px;
+        padding: 5px;
     }
     .main, .sidebar {
         float: left;
