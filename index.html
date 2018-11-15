@@ -10,75 +10,76 @@
 </head>
 
 <body id="naslovna">
-    
+
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <header>
         <img class="logo" src="static/logo2.png" alt="The Shum Art">
-       
-        <nav>
+        <img class="meni" id="meni" src="static/line-menu.png" alt="menu">
+        <nav class="prikaz" id="navigacija">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+                crossorigin="anonymous">
             <a class="border-button" href="index.html">Naslovna</a> <a class="border-button" href="omeni.html">O meni</a>
             <a class="border-button" href="gallery.html">Galerija</a><a class="border-button" href="kontakt.html">Kontakt</a>
         </nav>
-
     </header>
-    
-<!-- Slideshow container -->
-<div class="slideshow-container">
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      
-      <img src="static/slika18a.JPG" style="width:100%">
-      <div class="text">Caption Text</div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+
+            <img src="static/slika18a.JPG" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="static/slika20a.JPG" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="static/slika8a.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-  
-    <div class="mySlides fade">
-      
-      <img src="static/slika20a.JPG" style="width:100%">
-      <div class="text">Caption Two</div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"><img src="static/slika18a.JPG" alt="" height="150" width="200"></span>
+        <span class="dot" onclick="currentSlide(2)"><img src="static/slika20a.JPG" alt="" height="150" width="200"></span>
+        <span class="dot" onclick="currentSlide(3)"><img src="static/slika8a.jpg" alt="" height="150" width="200"></span>
     </div>
-  
-    <div class="mySlides fade">
-      
-      <img src="static/slika8a.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"><img src="static/slika18a.JPG" alt="" height="150" width="200"></span>
-    <span class="dot" onclick="currentSlide(2)"><img src="static/slika20a.JPG" alt="" height="150" width="200"></span>
-    <span class="dot" onclick="currentSlide(3)"><img src="static/slika8a.jpg" alt="" height="150" width="200"></span>
-  </div> 
     <div class="naslov">
         <p>Izrada modela od "nule"!!!</p>
         <p>Sve kreće od ideje!</p>
-        
-</div>
+
+    </div>
     <footer class="footer">
         <h1 class="line">
             <span>Share</span>
         </h1>
 
-        <div class="dugmad"> 
-        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdanijelareljic.github.io%2FTheShumArt%2F&layout=button_count&size=large&mobile_iframe=true&width=84&height=28&appId"
-            width="84" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-            allow="encrypted-media"></iframe>
-        <a href="https://twitter.com/share?text=https://danijelareljic.github.io/TheShumArt/omeni.html" class="twitter-share-button"
-            data-size="large" data-show-count="false">Tweet</a>
-        <a id="viber_share"><img src="static/share_purple_512_normal.png" alt="viber_share" height="28"></a>
-        <script>
-            var buttonID = "viber_share";
-            var text = "Check this out: ";
-            document.getElementById(buttonID)
-                .setAttribute('href', "https://3p3x.adj.st/?adjust_t=u783g1_kw9yml&adjust_fallback=https%3A%2F%2Fwww.viber.com%2F%3Futm_source%3DPartner%26utm_medium%3DSharebutton%26utm_campaign%3DDefualt&adjust_campaign=Sharebutton&adjust_deeplink=" + encodeURIComponent("viber://forward?text=" + encodeURIComponent(text + " " + window.location.href)));
-        </script>
+        <div class="dugmad">
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdanijelareljic.github.io%2FTheShumArt%2F&layout=button_count&size=large&mobile_iframe=true&width=84&height=28&appId"
+                width="84" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowTransparency="true" allow="encrypted-media"></iframe>
+            <a href="https://twitter.com/share?text=https://danijelareljic.github.io/TheShumArt/omeni.html" class="twitter-share-button"
+                data-size="large" data-show-count="false">Tweet</a>
+            <a id="viber_share"><img src="static/share_purple_512_normal.png" alt="viber_share" height="28"></a>
+            <script>
+                var buttonID = "viber_share";
+                var text = "Check this out: ";
+                document.getElementById(buttonID)
+                    .setAttribute('href', "https://3p3x.adj.st/?adjust_t=u783g1_kw9yml&adjust_fallback=https%3A%2F%2Fwww.viber.com%2F%3Futm_source%3DPartner%26utm_medium%3DSharebutton%26utm_campaign%3DDefualt&adjust_campaign=Sharebutton&adjust_deeplink=" + encodeURIComponent("viber://forward?text=" + encodeURIComponent(text + " " + window.location.href)));
+            </script>
         </div>
         <h4>All rights reserved</h4>
     </footer>
