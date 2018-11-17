@@ -1,6 +1,4 @@
-const meni = document.getElementById('meni')
-const navigacija = document.getElementById('navigacija')
-
+ 
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -30,9 +28,5 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-meni.addEventListener('click', function () {
 
-  navigacija.classList.toggle('prikaz')
-
-})
 

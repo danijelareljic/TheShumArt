@@ -13,16 +13,16 @@
 
 <body>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-   <header class="header-gallery">
+    <header class="header-gallery">
         <img class="logo" src="static/logo2.png" alt="The Shum Art">
-       
-        <nav>
+        <img class="meni" id="meni" src="static/menu.png" alt="menu">
+        <nav class="prikaz" id="navigacija">
             <a class="border-button" href="index.html">Naslovna</a> <a class="border-button" href="omeni.html">O meni</a>
             <a class="border-button" href="gallery.html">Galerija</a><a class="border-button" href="kontakt.html">Kontakt</a>
         </nav>
-        
+
     </header>
-     <div class="gallery">
+    <div class="gallery">
         <div>
             <a href="static/slika1a.jpg" title="Klik za uvećanje">
                 <img src="static/slika1.jpg" alt="">
@@ -220,27 +220,28 @@
         </div>
 
     </div>
-        <footer>
+    <footer>
         <h1 class="line">
-        <span>Share</span>
-    </h1>
-           
-            <div class="dugmad"> 
-        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdanijelareljic.github.io%2FTheShumArt%2F&layout=button_count&size=large&mobile_iframe=true&width=84&height=28&appId"
-            width="84" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-            allow="encrypted-media"></iframe>
-        <a href="https://twitter.com/share?text=https://danijelareljic.github.io/TheShumArt/omeni.html" class="twitter-share-button"
-            data-size="large" data-show-count="false">Tweet</a>
-        <a id="viber_share"><img src="static/share_purple_512_normal.png" alt="viber_share" height="28"></a>
-        <script>
-            var buttonID = "viber_share";
-            var text = "Check this out: ";
-            document.getElementById(buttonID)
-                .setAttribute('href', "https://3p3x.adj.st/?adjust_t=u783g1_kw9yml&adjust_fallback=https%3A%2F%2Fwww.viber.com%2F%3Futm_source%3DPartner%26utm_medium%3DSharebutton%26utm_campaign%3DDefualt&adjust_campaign=Sharebutton&adjust_deeplink=" + encodeURIComponent("viber://forward?text=" + encodeURIComponent(text + " " + window.location.href)));
-        </script>
+            <span>Share</span>
+        </h1>
+
+        <div class="dugmad">
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdanijelareljic.github.io%2FTheShumArt%2F&layout=button_count&size=large&mobile_iframe=true&width=84&height=28&appId"
+                width="84" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowTransparency="true" allow="encrypted-media"></iframe>
+            <a href="https://twitter.com/share?text=https://danijelareljic.github.io/TheShumArt/omeni.html" class="twitter-share-button"
+                data-size="large" data-show-count="false">Tweet</a>
+            <a id="viber_share"><img src="static/share_purple_512_normal.png" alt="viber_share" height="28"></a>
+            <script>
+                var buttonID = "viber_share";
+                var text = "Check this out: ";
+                document.getElementById(buttonID)
+                    .setAttribute('href', "https://3p3x.adj.st/?adjust_t=u783g1_kw9yml&adjust_fallback=https%3A%2F%2Fwww.viber.com%2F%3Futm_source%3DPartner%26utm_medium%3DSharebutton%26utm_campaign%3DDefualt&adjust_campaign=Sharebutton&adjust_deeplink=" + encodeURIComponent("viber://forward?text=" + encodeURIComponent(text + " " + window.location.href)));
+            </script>
         </div>
-            <h4>All rights reserved</h4>
-        </footer>
+        <h4>All rights reserved</h4>
+    </footer>
+    <script src="mainNav.js"></script>
 </body>
 
 </html>

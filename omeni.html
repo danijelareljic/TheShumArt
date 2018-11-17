@@ -17,8 +17,8 @@
 
     <header class="header">
         <img class="logo" src="static/logo2.png" alt="The Shum Art">
-
-        <nav>
+        <img class="meni" id="meni" src="static/menu.png" alt="menu">
+        <nav class="prikaz" id="navigacija">
             <a class="border-button" href="index.html">Naslovna</a> <a class="border-button" href="omeni.html">O meni</a>
             <a class="border-button" href="gallery.html">Galerija</a><a class="border-button" href="kontakt.html">Kontakt</a>
         </nav>
@@ -54,9 +54,16 @@
             <p>Ovaj sajt sam pokrenuo kako bih predstavio ovo čime se bavim. Voleo bih da čujem vaša mišljenja, ideje,
                 predloge... Ukoliko imate bilo kakvo pitanje ili kritiku/pohvalu slobodno ostavite komentar ispod ili
                 se
-                javite preko privatne poruke.</p>
+                javite preko privatne <a href="kontakt.html"> poruke</a>.</p>
             <p>Trudiću se da odgovorim u što skorije vreme.</p>
+        </div>
 
+        <div class="sidebar">
+            <video width="360" height="340" poster="static/logob.png" controls src="static/sundjer proba 2.mp4">
+                Your browser does not support the
+                video tag.</video>
+        </div>
+        <div class="komentar">
             <div id="fb-root"></div>
             <script>(function (d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0];
@@ -67,13 +74,6 @@
                 }(document, 'script', 'facebook-jssdk'));</script>
             <div class="fb-comments" data-href="https://danijelareljic.github.io/TheShumArt/omeni.html" data-numposts="5"></div>
         </div>
-
-        <div class="sidebar">
-            <video width="360" height="340" poster="static/logob.png" controls src="static/sundjer proba 2.mp4">
-                Your browser does not support the
-                video tag.</video>
-        </div>
-
     </div>
     <footer>
         <h1 class="line">
@@ -96,6 +96,7 @@
         </div>
         <h4>All rights reserved</h4>
     </footer>
+    <script src="mainNav.js"></script>
 </body>
 
 </html>
